@@ -10,48 +10,51 @@
 <body>
     <div class="container">
         <div class="row">
-            <table class="table">
-                <tr>
-                    <td class="col col-12 col-sm-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6">Name</td>
-                    <td class="col col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-6"> <input type="text" class="form-control"> </td>
-                </tr>
-                <tr>
-                    <td>Branch</td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>Admission number</td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>Roll number</td>
-                    <td> <input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>DOB</td>
-                    <td> <input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>Semester</td>
-                    <td> <input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>password</td>
-                    <td> <input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>Confirm password</td>
-                    <td> <input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td>register</td>
-                    <td> <button class="btn btn-success">register</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="/">back to login</a></td>
-                </tr>
-            </table>
+            <form action="/register" method="POST"> 
+                <table class="table">
+                    <tr>
+                        <td class="col col-12 col-sm-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6">Name</td>
+                        <td class="col col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-6"> <input type="text" name=" name" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td><input type="text" name="branch" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Admission number</td>
+                        <td><input type="text" name="admissionnumber" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Roll number</td>
+                        <td> <input type="text" name="rollno" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td> <input type="date" name="DOB" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Semester</td>
+                        <td> <input type="text" name="semester" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td> <input type="password" name="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm password</td>
+                        <td> <input type="password" name="confirmpassword"  class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>register</td>
+                        <td> <button type="submit" class="btn btn-success">register</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="/">back to login</a></td>
+                    </tr>
+                </table>
+            </form>
+            
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
